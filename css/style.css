@@ -15,10 +15,10 @@ azzurro sezioni: #1e90ff;
 rosa sezioni: #ffc0cb;
 grigio sfondo sezioni: #d3d3d3;
 verde sezione: #228b22;
-nero sfondo footer: #228b22;
-rosa colonna grande footer: #228b22;
+nero sfondo footer: #23272a;
+rosa colonna grande footer: #f08080;
 verdeacqua colonna footer: #20b2aa;
-azzurro container footer: #20b2aa;
+azzurro container footer: #7fffd4;
 rosa bottoni footer: #ffb6c1;
 
 */
@@ -104,6 +104,42 @@ main > section > div.container {
 
 /* FOOTER */
 
+footer > section.big {
+    min-height: 400px;
+}
+
+footer > section.small {
+    min-height: 50px;
+}
+
+footer > section > div.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+footer > section > div > div.box {
+    padding: 25px 0;
+}
+
+footer > section > div > div > div.big-column {
+    min-height: 350px;
+    width: 40%;
+}
+
+footer > section > div > div > div.small-column {
+    min-height: 350px;
+    width: 15%;
+}
+
+.last.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo, .botton{
+    padding: 5px 10px;
+}
 
 
 
@@ -151,13 +187,39 @@ main > section > div.container {
 
 .debug .big-container {
     background-color: #1e90ff;
+    border: 1px dashed black;
 }
 
 .debug .small-container {
-    background-color: #ffc0cb;;
+    background-color: #ffc0cb;
+    border: 1px dashed black;
 }
 
 .debug .superbig-container {
     background-color: #228b22;
+    border: 1px dashed black;
 }
 
+.debug .dark-grey{
+    background-color: #23272a;
+}
+
+.debug footer > section > div > div > div.big-column {
+    background-color: #f08080;
+}
+
+.debug footer > section > div > div > div.small-column {
+    background-color: #20b2aa;
+    border: 1px dashed white;
+}
+
+.debug footer > section > div > div.last{
+    background-color: #7fffd4;
+}
+
+.debug .logo, .button {
+    background-color: #ffb6c1;
+    padding: 5px 10px;
+    border: 1px dashed black;
+    color: black;
+}
